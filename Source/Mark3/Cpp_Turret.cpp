@@ -176,7 +176,7 @@ float ACpp_Turret::SignedAngle(FVector V1, FVector V2, FVector NormalVector) con
 void ACpp_Turret::Fire()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Firing!"));
-	TriggerFire();
+	TriggerFireEvent();
 	//GetWorld()->SpawnActor<AStaticMeshActor>(Bullet_Blueprint_C, barrelMesh->GetComponentLocation(), barrelMesh->GetActorRotation());
 }
 

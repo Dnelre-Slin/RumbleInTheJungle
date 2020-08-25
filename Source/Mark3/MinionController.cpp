@@ -32,6 +32,7 @@ void AMinionController::Tick(float DeltaTime)
 void AMinionController::OnMoveCompleted(FAIRequestID RequestId, const FPathFollowingResult & Result)
 {
 	UE_LOG(LogTemp, Display, TEXT("Move completed"));
+	GetPawn()->Destroy();
 }
 
 void AMinionController::OnSpawn()

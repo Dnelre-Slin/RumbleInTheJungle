@@ -42,7 +42,7 @@ protected:
 	void Fire();
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void TriggerFire();
+	void TriggerFireEvent();
 
 public:	
 	// Called every frame

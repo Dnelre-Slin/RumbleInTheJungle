@@ -24,12 +24,13 @@ protected:
 public:
 	virtual void Tick(float DeltaTime) override;
 
+protected:
+
 	void OnMoveCompleted(FAIRequestID RequestId, const FPathFollowingResult & Result) override;
 
 	UFUNCTION(blueprintcallable)
 	void OnSpawn();
 
-protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AActor* targetPosition;
 };
